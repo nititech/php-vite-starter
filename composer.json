@@ -1,0 +1,15 @@
+{
+	"name": "vite-php",
+	"type": "project",
+	"homepage": "https://nititech.de",
+	"description": "",
+	"readme": "README.md",
+	"license": "proprietary",
+	"support": {
+	},
+	"repositories": [
+	],
+	"require": {
+		"php": ">=8.1"
+	}
+}

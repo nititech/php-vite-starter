@@ -1,0 +1,25 @@
+{
+  "name": "vite-php",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "php-install": "php ./bin/composer.phar install"
+  },
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.22.2",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "prettier": "^3.2.5",
+    "sass": "^1.71.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.15",
+    "vite-plugin-php": "1.0.7",
+    "vite-plugin-svgr": "^4.2.0",
+    "vite-tsconfig-paths": "^4.3.1"
+  },
+  "dependencies": {}
+}
