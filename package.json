@@ -2,6 +2,7 @@
   "name": "vite-php",
   "private": true,
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -16,8 +17,9 @@
     "sass": "^1.71.0",
     "tailwindcss": "^3.4.1",
     "typescript": "^4.5.4",
-    "vite": "^2.9.15",
-    "vite-plugin-php": "1.0.7",
+    "vite": "^5.1.3",
+    "vite-plugin-php": "^1.0.9",
+    "vite-plugin-static-copy": "^1.0.1",
     "vite-plugin-svgr": "^4.2.0",
     "vite-tsconfig-paths": "^4.3.1"
   },

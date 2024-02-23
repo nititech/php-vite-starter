@@ -1,5 +1,5 @@
 {
-	"parser": "php",
+	"$schema": "https://json.schemastore.org/prettierrc",
 	"phpVersion": "8.2",
 	"plugins": ["@prettier/plugin-php"],
 	"printWidth": 80,

@@ -1,18 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+require('php/layouts/HTML.php');
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+$layout = new HTML(title: 'test');
+?>
 
-	<link href="../src/styles/global.scss" rel="stylesheet" />
-</head>
-
-<body class="w-screen h-screen flex items-center justify-center bg-neutral-50">
-	<div class="font-bold text-3xl">
-		<?= "Vite-PHP!"; ?>
-	</div>
-</body>
-
-</html>
+<div class="flex flex-col items-center text-2xl">
+	<div>Vite</div>
+	<div>+</div>
+	<img src="/logo.svg" class="w-20" />
+</div>

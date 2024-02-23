@@ -1,16 +1,24 @@
 // vite.config.js
 import { defineConfig } from 'vite';
 import usePHP from 'vite-plugin-php';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 
-export default defineConfig({
-	base: '/',
-	server: {
-		port: 3000,
-		base: '/',
-	},
+export default defineConfig(({ command }) => ({
+	base: command === 'serve' ? '/' : '/',
 	plugins: [
 		usePHP({
-			entry: ['**/*.php'],
+			entry: ['pages/**/*.php', 'php/**/*.php'],
+		}),
+		viteStaticCopy({
+			targets: [
+				{ src: 'src/public', dest: '' },
+				{ src: 'php', dest: '' },
+			],
+			silent: command === 'serve',
 		}),
 	],
-});
+	publicDir: command === 'build' ? 'raw' : 'src/public',
+	server: {
+		port: 3000,
+	},
+}));
