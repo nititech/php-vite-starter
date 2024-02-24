@@ -6,6 +6,9 @@ RewriteCond %{REQUEST_URI}::$1 ^(.*?/)(.*)::\2$
 RewriteCond %{DOCUMENT_ROOT}%{ENV:BASE}pages/$1.php -f
 	RewriteRule ^(.*)(\.php|)$ pages/$1.php [L,QSA]
 
+RewriteCond %{DOCUMENT_ROOT}%{ENV:BASE}pages/$1index.php -f
+	RewriteRule ^(.*)(\.php|)$ pages/$1index.php [L,QSA]
+
 RewriteCond %{DOCUMENT_ROOT}%{ENV:BASE}assets/$1 -f
 	RewriteRule ^(.*)$ assets/$1 [L,QSA]
 
