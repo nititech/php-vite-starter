@@ -8,4 +8,5 @@ $layout = new HTML(title: 'PHP via Vite');
 	<?php include('partials/vite-name.php'); ?>
 	<div>+</div>
 	<img src="/logo.svg" class="w-20" />
+	<a href="<%= BASE %>/" class="mt-10">Home-Link</a>
 </div>
