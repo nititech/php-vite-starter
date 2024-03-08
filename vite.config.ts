@@ -7,6 +7,7 @@ import { ViteEjsPlugin } from 'vite-plugin-ejs';
 
 export default defineConfig(({ command }) => {
 	const base = command === 'serve' ? '/pages/' : '/';
+	const BASE = base.substring(0, base.length - 1);
 
 	return {
 		base,
@@ -15,7 +16,7 @@ export default defineConfig(({ command }) => {
 				entry: ['pages/**/*.php', 'partials/**/*.php', 'php/**/*.php'],
 			}),
 			ViteEjsPlugin({
-				BASE: base.substring(0, base.length - 1),
+				BASE,
 			}),
 			viteStaticCopy({
 				targets: [
@@ -25,6 +26,7 @@ export default defineConfig(({ command }) => {
 				silent: command === 'serve',
 			}),
 		],
+		define: { BASE: JSON.stringify(BASE) },
 		resolve: {
 			alias: {
 				'~/': fileURLToPath(new URL('./src/', import.meta.url)),
