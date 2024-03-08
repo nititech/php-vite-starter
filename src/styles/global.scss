@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+a {
+	@apply underline;
+	@apply text-sky-800;
+
+	@apply hover:no-underline;
+}

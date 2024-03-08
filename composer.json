@@ -1,5 +1,5 @@
 {
-	"name": "vite-php",
+	"name": "vite-php-starter",
 	"type": "project",
 	"homepage": "https://nititech.de",
 	"description": "",
@@ -10,6 +10,6 @@
 	"repositories": [
 	],
 	"require": {
-		"php": ">=8.1"
+		"php": ">=7.3"
 	}
 }

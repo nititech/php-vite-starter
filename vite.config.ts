@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import usePHP from 'vite-plugin-php';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 import { ViteEjsPlugin } from 'vite-plugin-ejs';
+import { imagetools } from 'vite-imagetools';
 
 export default defineConfig(({ command }) => {
 	const base = command === 'serve' ? '/pages/' : '/';
@@ -12,6 +13,7 @@ export default defineConfig(({ command }) => {
 	return {
 		base,
 		plugins: [
+			imagetools(),
 			usePHP({
 				entry: ['pages/**/*.php', 'partials/**/*.php', 'php/**/*.php'],
 			}),

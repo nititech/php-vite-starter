@@ -4,12 +4,18 @@ require('php/main.php');
 $layout = new HTML(title: 'PHP via Vite');
 ?>
 
-<div class="flex flex-col items-center text-2xl">
-	<?php include('partials/vite-name.php'); ?>
+<div class="flex flex-col items-center gap-10 text-2xl">
+	<?php include('partials/nav.php'); ?>
 
-	<div>+</div>
+	<div class="flex flex-col items-center">
+		<?php include('partials/vite-name.php'); ?>
 
-	<img src="/logo.svg" class="w-20" />
+		<div>+</div>
 
-	<a href="<%= BASE %>/" class="mt-10 text-base underline text-sky-800 hover:no-underline">Home</a>
+		<img src="/logo.svg" class="w-20" />
+	</div>
+
+	<div id="repos" class="text-base flex gap-10"></div>
 </div>
+
+<script src="/src/scripts/repos.ts" type="module"></script>
