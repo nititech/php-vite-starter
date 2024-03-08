@@ -1,12 +1,33 @@
 {
-	"name": "vite-php",
-	"version": "0.0.0",
+	"name": "vite-php-starter",
+	"version": "1.0.0",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
-		"preview": "vite preview",
 		"php-install": "php ./bin/composer.phar install"
+	},
+	"keywords": [
+		"vite-php-starter",
+		"vite",
+		"php",
+		"starter",
+		"template"
+	],
+	"homepage": "https://github.com/nititech/vite-php-starter",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/nititech/vite-php-starter.git"
+	},
+	"bugs": {
+		"url": "https://github.com/nititech/vite-php-starter/issues",
+		"email": "mail@nititech.de"
+	},
+	"license": "SEE BSD 2-Clause LICENSE IN LICENSE.md",
+	"author": {
+		"name": "Nikita Nitichevski",
+		"email": "nikita.n@nititech.de",
+		"url": "https://nititech.de"
 	},
 	"devDependencies": {
 		"@prettier/plugin-php": "^0.22.2",
