@@ -22,7 +22,7 @@ export default defineConfig(({ command }) => {
 			}),
 			viteStaticCopy({
 				targets: [
-					{ src: 'src/public', dest: '' },
+					{ src: 'public', dest: '' },
 					{ src: 'system', dest: '' },
 					{ src: 'vendor', dest: '' },
 				],
@@ -35,7 +35,7 @@ export default defineConfig(({ command }) => {
 				'~/': fileURLToPath(new URL('./src/', import.meta.url)),
 			},
 		},
-		publicDir: command === 'build' ? 'raw' : 'src/public',
+		publicDir: command === 'build' ? 'raw' : 'public',
 		server: {
 			port: 3000,
 		},
