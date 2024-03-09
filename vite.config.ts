@@ -15,7 +15,7 @@ export default defineConfig(({ command }) => {
 		plugins: [
 			imagetools(),
 			usePHP({
-				entry: ['pages/**/*.php', 'partials/**/*.php', 'php/**/*.php'],
+				entry: ['pages/**/*.php', 'partials/**/*.php'],
 			}),
 			ViteEjsPlugin({
 				BASE,
