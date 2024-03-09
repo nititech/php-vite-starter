@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json.schemastore.org/prettierrc",
-	"phpVersion": "8.2",
+	"phpVersion": "7.3",
 	"plugins": ["@prettier/plugin-php"],
 	"printWidth": 80,
 	"tabWidth": 4,

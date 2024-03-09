@@ -1,6 +1,5 @@
 node_modules
+vendor
 .DS_Store
 dist
-dist-ssr
 *.local
-node_modules/*
