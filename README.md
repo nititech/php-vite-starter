@@ -7,7 +7,7 @@ Vite-PHP-Starter is a modern vanilla PHP-Vite starter repository designed to pro
 -   **TypeScript/JavaScript Transpilation**: Write modern JavaScript or TypeScript code, which will be automatically transpiled to browser-compatible JavaScript.
 -   **Tailwind CSS Implementation**: Utilize Tailwind CSS for rapid UI development with utility-first classes.
 -   **SASS/SCSS Support**: Write styles using SASS or SCSS syntax, with built-in support for compilation.
--   **EJS Template Language Support**: Use the EJS (Embedded JavaScript) templating language for dynamic content rendering on the server-side.
+-   **EJS Template Language Support**: Use the EJS (Embedded JavaScript) templating language for using JavaScript pieces in your PHP-files.
 -   **Image Transform Tools**: Easily manage and transform images as needed for your application.
 -   **SVG Loader**: Load SVG files directly into your project, allowing for scalable vector graphics usage.
 
@@ -29,7 +29,7 @@ npm run php-install
 
 ## Development
 
-To start the development server, just run the following command:
+3. Start the development server, just run the following command:
 
 ```bash
 npm run dev
