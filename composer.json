@@ -1,14 +1,29 @@
 {
-	"name": "vite-php-starter",
+	"$schema": "https://getcomposer.org/schema.json",
+	"name": "nititech/vite-php-starter",
+	"description": "A modern vanilla PHP-Vite starter repo, utilizing vite-plugin-php",
+	"version": "1.0.0",
 	"type": "project",
-	"homepage": "https://nititech.de",
-	"description": "",
 	"readme": "README.md",
-	"license": "proprietary",
-	"support": {
+	"license": "See MIT license in LICENSE",
+	"homepage": "https://github.com/nititech/vite-php-starter",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/nititech/vite-php-starter.git"
 	},
-	"repositories": [
-	],
+	"bugs": {
+		"url": "https://github.com/nititech/vite-php-starter/issues",
+		"email": "mail@nititech.de"
+	},
+	"support": {
+		"email": "mail@nititech.de"
+	},
+	"author": {
+		"name": "Nikita Nitichevski",
+		"email": "nikita.n@nititech.de",
+		"url": "https://nititech.de"
+	},
+	"repositories": [],
 	"require": {
 		"php": ">=7.3"
 	}

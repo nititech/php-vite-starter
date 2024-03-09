@@ -15,6 +15,8 @@
 		"starter",
 		"template"
 	],
+	"readme": "README.md",
+	"license": "See MIT license in LICENSE",
 	"homepage": "https://github.com/nititech/vite-php-starter",
 	"repository": {
 		"type": "git",
@@ -24,7 +26,6 @@
 		"url": "https://github.com/nititech/vite-php-starter/issues",
 		"email": "mail@nititech.de"
 	},
-	"license": "See MIT license in LICENSE",
 	"author": {
 		"name": "Nikita Nitichevski",
 		"email": "nikita.n@nititech.de",
