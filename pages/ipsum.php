@@ -1,5 +1,5 @@
 <?php
-require('php/main.php');
+require('system/main.php');
 
 $layout = new HTML(title: 'PHP via Vite');
 ?>

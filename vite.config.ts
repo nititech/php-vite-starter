@@ -23,7 +23,8 @@ export default defineConfig(({ command }) => {
 			viteStaticCopy({
 				targets: [
 					{ src: 'src/public', dest: '' },
-					{ src: 'php', dest: '' },
+					{ src: 'system', dest: '' },
+					{ src: 'vendor', dest: '' },
 				],
 				silent: command === 'serve',
 			}),
