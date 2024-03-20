@@ -1,3 +1,5 @@
+<img src="https://nititech.de/kosmo-header.png" style="width: 100%;" />
+
 # PHP-Vite Starter Repo
 
 php-vite-starter is a modern vanilla PHP-Vite starter repository designed to provide developers with the essential tools to kickstart their development of modern PHP applications. It integrates various features to streamline the development process, including TypeScript/JavaScript transpilation, Tailwind CSS implementation, SASS/SCSS support, EJS template language support, image transformation tools, and SVG loader.
