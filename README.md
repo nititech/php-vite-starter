@@ -1,6 +1,6 @@
-# Vite-PHP-Starter
+# PHP-Vite Starter Repo
 
-Vite-PHP-Starter is a modern vanilla PHP-Vite starter repository designed to provide developers with the essential tools to kickstart their development of modern PHP applications. It integrates various features to streamline the development process, including TypeScript/JavaScript transpilation, Tailwind CSS implementation, SASS/SCSS support, EJS template language support, image transformation tools, and SVG loader.
+php-vite-starter is a modern vanilla PHP-Vite starter repository designed to provide developers with the essential tools to kickstart their development of modern PHP applications. It integrates various features to streamline the development process, including TypeScript/JavaScript transpilation, Tailwind CSS implementation, SASS/SCSS support, EJS template language support, image transformation tools, and SVG loader.
 
 ## Features
 
@@ -16,13 +16,13 @@ Vite-PHP-Starter is a modern vanilla PHP-Vite starter repository designed to pro
 1. **Clone the Repository**: Start by cloning this repository to your local machine.
 
 ```bash
-git clone https://github.com/nititech/vite-php-starter.git
+git clone https://github.com/nititech/php-vite-starter.git
 ```
 
 2. **Install Dependencies**: Navigate into the project directory and install the necessary dependencies using npm or yarn.
 
 ```bash
-cd vite-php-starter
+cd php-vite-starter
 npm install
 npm run php-install
 ```

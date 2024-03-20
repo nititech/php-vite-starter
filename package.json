@@ -1,5 +1,5 @@
 {
-	"name": "vite-php-starter",
+	"name": "php-vite-starter",
 	"description": "A modern vanilla PHP-Vite starter repo, utilizing vite-plugin-php",
 	"version": "1.0.0",
 	"type": "module",
@@ -9,7 +9,7 @@
 		"php-install": "php ./bin/composer.phar install"
 	},
 	"keywords": [
-		"vite-php-starter",
+		"php-vite-starter",
 		"vite",
 		"php",
 		"starter",
@@ -20,13 +20,13 @@
 	],
 	"readme": "README.md",
 	"license": "See MIT license in LICENSE",
-	"homepage": "https://github.com/nititech/vite-php-starter",
+	"homepage": "https://github.com/nititech/php-vite-starter",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/nititech/vite-php-starter.git"
+		"url": "https://github.com/nititech/php-vite-starter.git"
 	},
 	"bugs": {
-		"url": "https://github.com/nititech/vite-php-starter/issues",
+		"url": "https://github.com/nititech/php-vite-starter/issues",
 		"email": "mail@nititech.de"
 	},
 	"author": {
