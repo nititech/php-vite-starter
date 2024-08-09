@@ -36,19 +36,19 @@
 	},
 	"devDependencies": {
 		"@prettier/plugin-php": "^0.22.2",
-		"@types/node": "^20.12.7",
-		"autoprefixer": "^10.4.19",
-		"postcss": "^8.4.38",
-		"prettier": "^3.2.5",
-		"sass": "^1.74.1",
-		"tailwindcss": "^3.4.3",
-		"typescript": "^5.4.5",
-		"vite": "^5.2.8",
-		"vite-imagetools": "^7.0.1",
+		"@types/node": "^22.1.0",
+		"autoprefixer": "^10.4.20",
+		"postcss": "^8.4.41",
+		"prettier": "^3.3.3",
+		"sass": "^1.77.8",
+		"tailwindcss": "^3.4.9",
+		"typescript": "^5.5.4",
+		"vite": "^5.4.0",
+		"vite-imagetools": "^7.0.4",
 		"vite-plugin-ejs": "^1.7.0",
-		"vite-plugin-php": "^1.0.20",
-		"vite-plugin-static-copy": "^1.0.2",
+		"vite-plugin-php": "^1.0.50",
+		"vite-plugin-static-copy": "^1.0.6",
 		"vite-plugin-svgr": "^4.2.0",
-		"vite-tsconfig-paths": "^4.3.2"
+		"vite-tsconfig-paths": "^5.0.1"
 	}
 }
