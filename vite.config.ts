@@ -36,7 +36,10 @@ export default defineConfig(({ command }) => {
 				silent: command === 'serve',
 			}),
 		],
-		define: { BASE: JSON.stringify(BASE) },
+		define: {
+			'BASE': JSON.stringify(BASE),
+			'import.meta.env.BASE': JSON.stringify(BASE),
+		},
 		resolve: {
 			alias: {
 				'~/': fileURLToPath(new URL('./src/', import.meta.url)),

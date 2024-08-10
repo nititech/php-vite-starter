@@ -12,7 +12,7 @@ $layout = new HTML(title: 'PHP via Vite');
 
 		<div>+</div>
 
-		<img src="<%= BASE %>/logo.svg" class="w-20" />
+		<img src="%BASE%/logo.svg" class="w-20" />
 	</div>
 
 	<div id="repos" class="text-base flex gap-10"></div>
