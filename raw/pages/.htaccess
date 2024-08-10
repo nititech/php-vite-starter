@@ -1,3 +1,0 @@
-<IfModule mod_php.c>
-	php_value include_path ".:../"
-</IfModule>

@@ -52,6 +52,14 @@ Now you can access your application. Once the server is running, you can access 
 -   This folder is supposed to hold binaries that are needed for project compilations and such
 -   Currently holds only `composer.phar` for the `php-install command`
 
+##### /index.php
+
+This is the new entry point ⚠️
+
+-   Routing is now programmatic -> You have one entry file which does the routing
+-   Non-PHP files will not go through this router
+-   Nonexisting files and paths will go through this router
+
 ##### /pages
 
 ```
@@ -59,9 +67,10 @@ Now you can access your application. Once the server is running, you can access 
 │   ├── **/*.php
 ```
 
--   File based routing
--   These files will be publicly accessible by name without `.php` file extension
--   The `.php` files will be transpiled using Vite and the `vite-plugin-php` plugin
+-   ~~File based routing~~
+-   This `.php` files will be transpiled using Vite and the `vite-plugin-php` plugin
+-   These files will be publicly accessible by their name without `.php` file extension
+    -   This can be changed in the router located in the `/index.php`
 
 ##### /partials
 

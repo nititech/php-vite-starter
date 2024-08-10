@@ -3,11 +3,10 @@ RewriteEngine On
 RewriteCond %{REQUEST_URI}::$1 ^(.*?/)(.*)::\2$
 	RewriteRule ^(.*)$ - [E=BASE:%1]
 
-RewriteCond %{DOCUMENT_ROOT}%{ENV:BASE}pages/$1.php -f
-	RewriteRule ^(.*)(\.php|)$ pages/$1.php [L,QSA]
-
-RewriteCond %{DOCUMENT_ROOT}%{ENV:BASE}pages/$1index.php -f
-	RewriteRule ^(.*)(\.php|)$ pages/$1index.php [L,QSA]
-
 RewriteCond %{DOCUMENT_ROOT}%{ENV:BASE}public/$1 -f
 	RewriteRule ^(.*)$ public/$1 [L,QSA]
+
+RewriteCond %{DOCUMENT_ROOT}%{ENV:BASE}public/$1 -f
+	RewriteRule ^public/(.*)$ public/$1 [L,QSA]
+
+RewriteRule ^(.*)$ index.php [L,QSA]
