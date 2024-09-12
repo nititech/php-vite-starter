@@ -37,7 +37,7 @@ npm run php-install
 npm run dev
 ```
 
-Now you can access your application. Once the server is running, you can access your application by navigating to http://localhost:3000/pages in your web browser.
+Now you can access your application. Once the server is running, you can access your application by navigating to http://localhost:3000/ in your web browser.
 
 ## Project Structure
 
