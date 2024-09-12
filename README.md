@@ -2,13 +2,15 @@
 
 # PHP-Vite Starter Repo
 
-php-vite-starter is a modern vanilla PHP-Vite starter repository designed to provide developers with the essential tools to kickstart their development of modern PHP applications. It integrates various features to streamline the development process, including TypeScript/JavaScript transpilation, Tailwind CSS implementation, SASS/SCSS support, EJS template language support, image transformation tools, and SVG loader.
+php-vite-starter is a modern vanilla PHP-Vite starter repository designed to provide developers with the essential tools to kickstart their development of modern PHP applications.\
+This repository utilizes [Vite](https://vitejs.dev/) and the [`vite-plugin-php` plugin](https://github.com/donnikitos/vite-plugin-php) to improve developer experience and provide various features to streamline development.
 
 ## Features
 
--   **TypeScript/JavaScript Transpilation**: Write modern JavaScript or TypeScript code, which will be automatically transpiled to browser-compatible JavaScript.
+-   **Auto-refresh / auto-reloading**
+-   **TypeScript / JavaScript Transpilation**: Write modern JavaScript or TypeScript code, which will be automatically transpiled to browser-compatible JavaScript.
 -   **Tailwind CSS Implementation**: Utilize Tailwind CSS for rapid UI development with utility-first classes.
--   **SASS/SCSS Support**: Write styles using SASS or SCSS syntax, with built-in support for compilation.
+-   **SASS / SCSS Support**: Write styles using SASS or SCSS syntax, with built-in support for compilation.
 -   **EJS Template Language Support**: Use the EJS (Embedded JavaScript) templating language for using JavaScript pieces in your PHP-files.
 -   **Image Transform Tools**: Easily manage and transform images as needed for your application.
 -   **SVG Loader**: Load SVG files directly into your project, allowing for scalable vector graphics usage.

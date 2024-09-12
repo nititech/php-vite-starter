@@ -16,7 +16,13 @@
 		"template",
 		"tailwindcss",
 		"tailwind",
-		"typescript"
+		"typescript",
+		"auto-refresh",
+		"auto-reload",
+		"sass",
+		"scss",
+		"starter-repo",
+		"php-starter"
 	],
 	"readme": "README.md",
 	"license": "See MIT license in LICENSE",
