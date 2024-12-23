@@ -1,6 +1,6 @@
 <img src="https://nititech.de/kosmo-header.png" style="width: 100%;" />
 
-# PHP-Vite Starter Repo
+<h1 style="margin-bottom:0">PHP-Vite Starter Repo <span style="font-size:1rem;">by <a href="https://nititech.de" target="_blank">nititech</a></span></h1>
 
 php-vite-starter is a modern vanilla PHP-Vite starter repository designed to provide developers with the essential tools to kickstart their development of modern PHP applications.\
 This repository utilizes [Vite](https://vitejs.dev/) and the [`vite-plugin-php` plugin](https://github.com/donnikitos/vite-plugin-php) to improve developer experience and provide various features to streamline development.
@@ -8,6 +8,8 @@ This repository utilizes [Vite](https://vitejs.dev/) and the [`vite-plugin-php` 
 ## Features
 
 -   **Auto-refresh / auto-reloading**
+-   **JS environmental variables in PHP**: Use environmental variables supplied in `.env` or to Vite in your PHP code.
+-   **FastRoute router**: Fast and simple preconfigured router.
 -   **TypeScript / JavaScript Transpilation**: Write modern JavaScript or TypeScript code, which will be automatically transpiled to browser-compatible JavaScript.
 -   **Tailwind CSS Implementation**: Utilize Tailwind CSS for rapid UI development with utility-first classes.
 -   **SASS / SCSS Support**: Write styles using SASS or SCSS syntax, with built-in support for compilation.
@@ -28,7 +30,7 @@ git clone https://github.com/nititech/php-vite-starter.git
 ```bash
 cd php-vite-starter
 npm install
-npm run php-install
+npm run composer install
 ```
 
 ## Development
@@ -52,15 +54,28 @@ Now you can access your application. Once the server is running, you can access 
 ```
 
 -   This folder is supposed to hold binaries that are needed for project compilations and such
--   Currently holds only `composer.phar` for the `php-install command`
+-   Currently holds only `composer.phar` for the `composer` command
 
 ##### /index.php
 
-This is the new entry point ⚠️
+This is the app entry point ⚠️
 
--   Routing is now programmatic -> You have one entry file which does the routing
+-   Routing is now programmatic and uses [nikic' `FastRoute`](https://github.com/nikic/FastRoute) router -> for configuration see the `/configs/routes.php` file
 -   Non-PHP files will not go through this router
 -   Nonexisting files and paths will go through this router
+
+##### /configs
+
+```
+├── configs
+│   ├── env.php
+│   ├── routes.php
+│   ├── **/*
+```
+
+-   `env.php` will be transpiled using Vite and the `vite-plugin-php` plugin -> here you can store tokens or other constants that should be reused through the app.\
+    We use it to define the constants that we import from Vite.
+-   `routes.php` holds the routing configuration that is being used by FastRoute
 
 ##### /pages
 
@@ -69,10 +84,7 @@ This is the new entry point ⚠️
 │   ├── **/*.php
 ```
 
--   ~~File based routing~~
 -   This `.php` files will be transpiled using Vite and the `vite-plugin-php` plugin
--   These files will be publicly accessible by their name without `.php` file extension
-    -   This can be changed in the router located in the `/index.php`
 
 ##### /partials
 
@@ -82,7 +94,6 @@ This is the new entry point ⚠️
 ```
 
 -   Includable files (like components)
--   Not directly publicly accessible
 -   These `.php` files will be transpiled using Vite and the `vite-plugin-php` plugin
 
 ##### /public
@@ -154,7 +165,11 @@ All files will be generated and copied into the `/dist` folder.
 
 ```
 ├── dist
-│   ├── pages (Publicly accessible by name without .php file extension)
+│   ├── configs (Files copied from the ./configs folder)
+│   │   ├── env.php (Transpiled to include environmental variables)
+│   │   ├── routes.php
+│   │   ├── **/*
+│   ├── pages
 │   │   ├── **/* (Transpiled PHP files from your ./pages folder)
 │   │
 │   ├── partials
@@ -177,6 +192,8 @@ All files will be generated and copied into the `/dist` folder.
 
 This starter repository comes with default configurations for various tools. However, you can customize these configurations according to your project requirements. Key configuration files include:
 
+-   **configs/routes.php**: Routing configuration.
+-   **configs/env.php**: Globally accessible constants for PHP.
 -   **tsconfig.json**: TypeScript configuration file. Modify this file to adjust TypeScript compiler options.
 -   **.prettierrc**: Prettier configuration file for code formatting. Modify this file to customize code formatting rules.
 -   **vite.config.ts**: Contains configuration settings for Vite, such as plugins, build options, and server settings.
@@ -224,4 +241,4 @@ Contributions are welcome! If you have any suggestions, improvements, or bug fix
 
 ## Acknowledgments
 
-Special thanks to the developers of Vite, Tailwind CSS, and other tools used in this starter repository for their fantastic work.
+Special thanks to the developers of Vite, Tailwind CSS, FastRoutes, and other tools used in this starter repository for their fantastic work.
