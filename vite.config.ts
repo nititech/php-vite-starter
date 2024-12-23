@@ -69,6 +69,13 @@ export default defineConfig(({ command }) => {
 			},
 		},
 		publicDir: command === 'build' ? 'raw' : 'public',
+		css: {
+			preprocessorOptions: {
+				scss: {
+					api: 'modern-compiler',
+				},
+			},
+		},
 		server: {
 			port: 3000,
 		},
