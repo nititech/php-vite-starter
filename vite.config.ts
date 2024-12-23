@@ -18,7 +18,12 @@ export default defineConfig(({ command }) => {
 		plugins: [
 			imagetools(),
 			usePHP({
-				entry: ['index.php', 'pages/**/*.php', 'partials/**/*.php'],
+				entry: [
+					'index.php',
+					'configs/env.php',
+					'pages/**/*.php',
+					'partials/**/*.php',
+				],
 				rewriteUrl(requestUrl) {
 					const filePath = fileURLToPath(
 						new URL('.' + requestUrl.pathname, import.meta.url),

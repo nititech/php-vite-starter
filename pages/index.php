@@ -8,7 +8,7 @@ $layout = new HTML(title: 'PHP via Vite');
 	<?php include('partials/nav.php'); ?>
 
 	<div class="flex flex-col items-center">
-		<?php include('partials/vite-name.php'); ?>
+		<?= VITE_NAME; ?>
 
 		<div>+</div>
 

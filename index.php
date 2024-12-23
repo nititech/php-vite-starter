@@ -12,6 +12,7 @@ function require_existing(string $path) {
 }
 
 require_existing('vendor/autoload.php');
+require_existing('configs/env.php');
 
 try {
 	require_existing('configs/routes.php');
