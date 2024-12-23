@@ -54,6 +54,7 @@ export default defineConfig(({ command }) => {
 				targets: [
 					{ src: 'public', dest: '' },
 					{ src: 'system', dest: '' },
+					{ src: 'configs', dest: '' },
 					{ src: 'vendor', dest: '' },
 				],
 				silent: command === 'serve',
