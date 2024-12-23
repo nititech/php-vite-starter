@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc --noEmit && vite build",
-		"php-install": "php ./bin/composer.phar install"
+		"composer": "php ./bin/composer.phar"
 	},
 	"keywords": [
 		"php-vite-starter",
@@ -36,8 +36,8 @@
 		"email": "mail@nititech.de"
 	},
 	"author": {
-		"name": "Nikita Nitichevski",
-		"email": "nikita.n@nititech.de",
+		"name": "nititech",
+		"email": "mail@nititech.de",
 		"url": "https://nititech.de"
 	},
 	"devDependencies": {

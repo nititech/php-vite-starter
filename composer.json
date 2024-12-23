@@ -19,12 +19,13 @@
 		"email": "mail@nititech.de"
 	},
 	"author": {
-		"name": "Nikita Nitichevski",
-		"email": "nikita.n@nititech.de",
+		"name": "nititech",
+		"email": "mail@nititech.de",
 		"url": "https://nititech.de"
 	},
 	"repositories": [],
 	"require": {
-		"php": ">=7.3"
+		"php": ">=7.3",
+		"nikic/fast-route": "^1.3"
 	}
 }
