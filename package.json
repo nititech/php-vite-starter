@@ -56,5 +56,8 @@
 		"vite-plugin-static-copy": "^2.0.0",
 		"vite-plugin-svgr": "^4.3.0",
 		"vite-tsconfig-paths": "^5.1.0"
-	}
+	},
+	"trustedDependencies": [
+		"@parcel/watcher"
+	]
 }
