@@ -5,8 +5,6 @@
 define('ROOT', __DIR__);
 define('MODE_DEV', in_array($_SERVER['REMOTE_ADDR'], ['::1', '127.0.0.1']));
 
-ini_set('include_path', ini_get('include_path') . PATH_SEPARATOR . ROOT);
-
 function require_existing(string $path) {
 	file_exists($path) && require_once($path);
 }
