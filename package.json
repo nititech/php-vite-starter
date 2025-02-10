@@ -52,7 +52,7 @@
 		"vite": "^6.0.7",
 		"vite-imagetools": "^7.0.5",
 		"vite-plugin-ejs": "^1.7.0",
-		"vite-plugin-php": "^1.0.70",
+		"vite-plugin-php": "^1.0.71",
 		"vite-plugin-static-copy": "^2.2.0",
 		"vite-plugin-svgr": "^4.3.0",
 		"vite-tsconfig-paths": "^5.1.4"
