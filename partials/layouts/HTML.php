@@ -20,6 +20,7 @@ class HTML {
 
 			<title><?= $this->title; ?></title>
 
+			<link href="/src/styles/tailwind.css" rel="stylesheet" />
 			<link href="/src/styles/global.scss" rel="stylesheet" />
 		</head>
 

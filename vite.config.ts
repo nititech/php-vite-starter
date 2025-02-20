@@ -6,6 +6,7 @@ import { viteStaticCopy } from 'vite-plugin-static-copy';
 import { ViteEjsPlugin } from 'vite-plugin-ejs';
 import { imagetools } from 'vite-imagetools';
 import { existsSync } from 'node:fs';
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig(({ command }) => {
 	const publicBasePath = '/php-vite-starter/'; // Change if deploying under a nested public path. Needs to end with a /. See https://vitejs.dev/guide/build.html#public-base-path
@@ -59,6 +60,7 @@ export default defineConfig(({ command }) => {
 				],
 				silent: command === 'serve',
 			}),
+			tailwindcss(),
 		],
 		define: {
 			'BASE': JSON.stringify(BASE),
